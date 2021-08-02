@@ -1,0 +1,25 @@
+{
+	"name": "Remove Sold Items",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "remove sold items in cryptoblades. alpha lol",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://app.cryptoblades.io/*",
+				"http://app.cryptoblades.io/*"
+			],
+			"js": [
+				"index.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+  "permissions": [
+    "tabs",
+				"https://app.cryptoblades.io/*",
+				"http://app.cryptoblades.io/*"
+  ],"background": {
+    "scripts":["background.js"]
+  }
+}
